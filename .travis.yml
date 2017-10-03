@@ -5,8 +5,8 @@ node_js:
 install:
   - yarn
 script:
+  - npm run lint	
   - yarn run predeploy
-  - npm run lint
 deploy:
   provider: surge
   project: ./build/
